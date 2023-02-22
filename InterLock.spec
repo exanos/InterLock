@@ -21,6 +21,8 @@ a = Analysis(
 )
 pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
 
+datas=[('c:\Windows\System32\Drivers\etc\hosts', '.')]
+
 exe = EXE(
     pyz,
     a.scripts,
@@ -38,9 +40,6 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
 )
-datas=[('c:\Windows\System32\Drivers\etc\hosts', '.')]
-
-
 coll = COLLECT(
     exe,
     a.binaries,
