@@ -18,6 +18,7 @@ def block_websites(website_list, hosts_path, redirect):
             else:
                 # write the website URLs to the hosts file and redirect them to localhost
                 file.write(redirect + " " + website + "\n")
+        file.flush()
 
 def unblock_websites(website_list, hosts_path):
     with open(hosts_path, 'r+') as file:
@@ -28,6 +29,8 @@ def unblock_websites(website_list, hosts_path):
             if not any(website in line for website in website_list):
                 file.write(line)
         file.truncate()
+        file.flush()
+    
 
 def check_password(password):
     while True:
@@ -148,12 +151,10 @@ def change_password(website_list):
     return load_data(password)
 
 def main():
-    
-    
+    # change the path of the hosts file depending on your operating system
     hosts_path = r"C:\Windows\System32\drivers\etc\hosts"
     redirect = "127.0.0.1"
     password=getpass.getpass("Enter password: ")
-    
     # load the blocked websites and password from the file
     try:
         blocked_data = load_data(password)
