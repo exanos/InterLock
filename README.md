@@ -13,7 +13,7 @@ To use the program, simply run the executable file as administrator and enter th
 
 The initial password to the program is "yourpassword", you can change it via the menu
 
-*Sites in the blocklist will remain to be blocked even after the program is closed. The only way to have permanent access to blocked sites is by removing them from the blocklist.
+*Sites in the blocklist will remain to be blocked even after the program is closed. The only way to have permanent access to blocked sites is by removing them from the blocklist.*
 
 
 ## Security
