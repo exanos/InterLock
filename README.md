@@ -22,7 +22,7 @@ The program uses AES encryption with the password as the encryption key to ensur
 ## License
 This program is licensed under the GNU General Public License v3.0 License. See LICENSE for more information.
 
-###Warning:
+### Warning:
 This Application edits the system files of your PC, hence it's recommended to run the make_backup.exe file once before running the program.
 
 ## Contact
