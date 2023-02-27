@@ -5,7 +5,7 @@ This open-source password-activated website blocker is designed for privacy-cons
 - Simple and easy-to-use interface
 - Timed, Password-activated breaks
 - Absolutely Unalterable Blocks (as long as user does not have administrator privileges and knows to edit the system files)
-- Blocklist can be easily edited to add or remove websites as needed
+- Blocklist can be easily edited to add or remove websites as needed (only with the password though)
 - Can help users stay focused and limit online distractions
 
 ## How to Use 
@@ -21,6 +21,9 @@ The program uses AES encryption with the password as the encryption key to ensur
 
 ## License
 This program is licensed under the GNU General Public License v3.0 License. See LICENSE for more information.
+
+### Warning:
+This Application edits the system files of your PC, hence it's recommended to run the make_backup.exe file once before running the program.
 
 ## Contact
 If you have any questions or issues, please contact [Anush Bharathi](mailto:anushbharathi2411@gmail.com).
